@@ -40,6 +40,11 @@ nav li:hover {
 #logo {
 	flex: 2 1 40rem;
 }
+
+.fa-bars  /* hamburger menu*/ {
+  display: none !important;
+}
+
 .hero {
 	min-height: 90vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
@@ -172,3 +177,30 @@ nav li:hover {
 	background: #cccccc;
 	border-radius: 4px;
 }
+
+/* responsive menu */
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fa-bars {
+    display: inline-block !important;
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 2rem;
+  }
+  .fa-bars:hover {
+    color: yellow;
+  }
+  #logo {
+    margin: 0 2rem;
+  }
+}
+
+
